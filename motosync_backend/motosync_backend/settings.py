@@ -40,6 +40,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://capstone-prototype.onrender.com",
+]
+
 ROOT_URLCONF = 'motosync_backend.urls'
 
 TEMPLATES = [

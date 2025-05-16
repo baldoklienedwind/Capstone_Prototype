@@ -9,8 +9,6 @@ const api = axios.create({
   },
 });
 
-export default api;
-
 export const login = async (username, password) => {
   const response = await api.post('token/', {
     username,
@@ -18,3 +16,5 @@ export const login = async (username, password) => {
   });
   return response.data;
 };
+
+export default api;
